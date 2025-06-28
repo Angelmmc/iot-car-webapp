@@ -1,0 +1,17 @@
+# Entorno virtual
+venv/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos de configuración de VSCode (opcional)
+.vscode/
+
+# Archivos de log, bases de datos, etc.
+*.log
+*.sqlite3
+
+# Archivos de entorno (opcional)
+.env

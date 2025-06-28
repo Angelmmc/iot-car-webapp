@@ -1,0 +1,48 @@
+.btn-square {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.table .wrap-text {
+    word-wrap: break-word;
+    /* Permite que las palabras largas se dividan */
+    max-width: 200px;
+    /* Define un ancho máximo para la celda */
+}
+
+#tabla-container {
+    max-width: 80%;
+    /* Ancho máximo para el contenedor de la tabla */
+    margin: 0 auto;
+    /* Centra el contenedor en la página */
+    overflow-x: auto;
+    /* Permite desplazamiento horizontal si es necesario */
+}
+
+#tabla-registros th,
+#tabla-registros td {
+    white-space: nowrap;
+    /* Evita que el contenido se ajuste a múltiples líneas */
+}
+
+#tabla-registros th {
+    width: 10%;
+    /* Ancho fijo para las cabeceras (ajusta según tus necesidades) */
+}
+
+#tabla-registros td {
+    width: 10%;
+    /* Ancho fijo para las celdas (ajusta según tus necesidades) */
+}
+
+.table-cell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+canvas {
+    border: 1px solid black;
+}

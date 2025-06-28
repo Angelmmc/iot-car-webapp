@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control de auto IoT</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="css/style.css"rel="stylesheet"/>
+  </head>
+  <body style="background-color: lightgray">    
+  <div
+      class="container text-center mt-3 bg-light p-3"
+      style="border-radius: 1%"
+    >
+      <h1 class="text-center">Control de auto IoT</h1>
+
+      <div class="form-group">
+        <label for="inputText" class="d-block text-left"
+          >Ingresa un nombre de usuario</label
+        >
+        <input
+          type="text"
+          id="inputText"
+          class="form-control"
+          placeholder="Adriel, Alejandro, Beto..."
+        />
+      </div>
+    </div>
+    <div
+      class="container-sm mt-5 bg-light p-2 rounded"
+      style="border-radius: 1%"
+    >
+      <h5 id="texto-boton" class="text-center"></h5>
+      <div class="d-flex justify-content-center flex-wrap mt-4">
+        <button
+          id="boton1"
+          type="button"
+          class="btn btn-info btn-square btn-control"
+        ><img src="images/rotate_90_degrees_ccw_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+          
+        </button>
+        <button
+          id="boton2"
+          type="button"
+          class="btn btn-primary btn-square btn-control"
+        >
+        <img src="images/keyboard_double_arrow_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+        <button
+          id="boton3"
+          type="button"
+          class="btn btn-info btn-square btn-control"
+        >
+        <img src="images/rotate_90_degrees_cw_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+      </div>
+      <div class="d-flex justify-content-center flex-wrap mt-2">
+        <button
+          id="boton4"
+          type="button"
+          class="btn btn-primary btn-square btn-control"
+        >
+        <img src="images/keyboard_double_arrow_left_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+        <button
+          id="boton5"
+          type="button"
+          class="btn btn-danger btn-square btn-control"
+        >
+        <img src="images/stop_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+        <button
+          id="boton6"
+          type="button"
+          class="btn btn-primary btn-square btn-control"
+        >
+        <img src="images/keyboard_double_arrow_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+      </div>
+      <div class="d-flex justify-content-center flex-wrap mt-2">
+        <button
+          id="boton7"
+          type="button"
+          class="btn btn-info btn-square btn-control"
+        >
+        <img src="images/rotate_left_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+        <button
+          id="boton8"
+          type="button"
+          class="btn btn-primary btn-square btn-control"
+        >
+        <img src="images/keyboard_double_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+        <button
+          id="boton9"
+          type="button"
+          class="btn btn-info btn-square btn-control"
+        >
+        <img src="images/rotate_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" width="100%">
+        </button>
+      </div>
+    </div>
+    <div
+      class="container d-flex justify-content-around text-center mt-3 bg-light p-3"
+      style="border-radius: 15px"
+    >
+
+    <button
+          id="boton10"
+          type="button"
+          class="btn btn-dark"
+        >
+          Consultar ultimo registro
+        </button>
+
+        <h3 class="">Consulta de registros</h3>
+        </button>
+        <button
+        id="boton11"
+        type="button"
+        class="btn btn-dark"
+      >
+        Consultar historial
+      </button>
+    </div>
+
+    <div id="tabla-container" class="table-responsive mt-5">
+        <table id="tabla-registros" class="table table-hover table-bordered table-striped text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">IP Cliente</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">ID Device</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-body">
+                <!-- Los datos se insertarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>  
+
+    <div
+      class="container d-flex justify-content-around text-center mt-3 bg-white p-3"
+      style="border-radius: 15px">
+    <img id="imagen" src="images/carro.png" width="40%" height="30%">
+    </div>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      data-require="requirejs@2.3.6"
+      data-semver="2.3.6"
+      src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsonwebtoken/8.5.1/jsonwebtoken.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
