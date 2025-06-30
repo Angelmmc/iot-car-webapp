@@ -68,5 +68,6 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 Check out the related repositories for my iot-car project.
 
-[![iot-car-backend](https://img.shields.io/badge/iot__car-arduino-blue?logo=github)](https://github.com/Angelmmc/iot-car-arduino)
+[![iot-car-arduino](https://img.shields.io/badge/iot__car-arduino-blue?logo=github)](https://github.com/Angelmmc/iot-car-arduino)
+[![iot-car-frontend-mobile](https://img.shields.io/badge/iot__car-frontend--mobile-FF4500?logo=github)](https://github.com/Angelmmc/iot-car-frontend-mobile)
 
