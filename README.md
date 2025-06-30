@@ -20,21 +20,32 @@ This Flutter-based mobile application serves as the user interface for an IoT-en
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Angelmmc/iot-car-frontend-mobile.git
+git clone https://github.com/Angelmmc/iot-car-webapp.git
 ```
 2. Navigate to the project folder
 ```bash
-cd iot-car-front-end-mobile
+cd iot-car-webapp
 ```
 
-3. Install dependencies
+3. Create and activate a virtual enviroment
 ```bash
-flutter pub get
+python -m venv venv
+venv\Scripts\activate
 ```
 
-4. Run the app
+4. Install dependencies
 ```bash
-flutter run
+pip install -r requirements.txt
+```
+
+5. Navigate to the back-end folder
+```bash
+cd backend
+```
+
+6. Run the app
+```bash
+python main.py
 ```
 ## Usage
 
