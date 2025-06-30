@@ -5,7 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/Angelmmc/iot-car-webapp.svg)](https://github.com/Angelmmc/iot-car-webapp/issues)
 
 ## About 
-This Flutter-based mobile application serves as the user interface for an IoT-enabled obstacle-avoiding car. It allows users to remotely control the car's movement and monitor actions performed, along with related data such as the author, date, and time — all through a clean and intuitive UI.
+This project is the backend system for an IoT-enabled car, providing a RESTful API for real-time vehicle monitoring and control. It also serves an integrated web frontend, allowing users to interact with the vehicle remotely through a browser. Designed to support remote commands, actions history.
 
 ## Built with
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
@@ -58,6 +58,7 @@ Main options
 
 ## Screenshot
 
+<img src="https://github.com/Angelmmc/iot-car-frontend-mobile/blob/master/assets/icon/screenshots/app_screen.jpg" alt="App Screen" width="300"/>
 <img src="https://github.com/Angelmmc/iot-car-frontend-mobile/blob/master/assets/icon/screenshots/app_screen.jpg" alt="App Screen" width="300"/>
 
 ## License
